@@ -1,4 +1,4 @@
-apiVersion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1beta1
 kind: Application
 metadata:
   name: ibm-platform-navigator-instance
@@ -27,7 +27,8 @@ spec:
             spec:
               license:
                 accept: true
-                license: L-RJON-C7QG3S
+                //license: L-RJON-C7QG3S
+                license: L-RJON-BUVMQX
               mqDashboard: true
               version: "2021.4.1"
               replicas: 2
