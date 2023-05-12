@@ -1,4 +1,5 @@
-apiVersion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1
+//apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: ibm-platform-navigator-instance
@@ -27,9 +28,11 @@ spec:
             spec:
               license:
                 accept: true
-                license: L-RJON-C7QG3S
+                //license: L-RJON-C7QG3S
+                license: L-RJON-CJR2RX
               mqDashboard: true
-              version: "2021.4.1"
+              //version: "2021.4.1"
+              version: "2022.4.1"
               replicas: 2
               storage:
                 class: managed-nfs-storage
